@@ -45,7 +45,7 @@ class TodosNotifier extends StateNotifier<List<Todo>> {
       }
     }
 
-    final newTodo = Todo(maxId, description, false);
+    final newTodo = Todo(maxId + 1, description, false);
     state = [...state, newTodo];
   }
 
